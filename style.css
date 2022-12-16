@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background-color: hsl(225, 100%, 98%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    /* border: 2px solid tomato; */
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    background-color: white;
+}
+
+.content {
+    padding: 2rem 1.8rem;
+}
+
+.content article {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 0.5rem;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+}
+
+.annual-plan-container {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 0.4rem 1rem;
+    border-radius: 0.5em;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 1rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.annual-plan-container a:hover {
+    text-decoration: none;
+}
+
+.annual-plan-container a {
+    margin-left: auto;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700
+}
+
+.annual-plan-container img {
+    margin-right: 1.5rem;
+}
+
+.btn {
+    display: block;
+    width:100%;
+    font-family: inherit;
+    font-weight: 900;
+    padding: 1em;
+    border: none;
+    border-radius: 0.8em;
+    cursor: pointer;
+}
+
+.blue-btn {
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      margin: 1rem;
+      transition: 0.5s;
+      /* box-shadow: x-offset y-offset blur spread color; */
+      box-shadow: 0 10px 20px 0px hsl(224, 23%, 55%);
+}
+
+.blue-btn:hover {
+    background-color: hsl(245, 75%, 75%);
+}
+
+.white-btn {
+     color: hsl(224, 23%, 55%);
+     background-color: transparent;
+}
+
+@media (max-with: 400px) {
+    body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    }
+    .card {
+        width: 300px;
+    }
+}
